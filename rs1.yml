@@ -14,7 +14,7 @@ spec:
             name: myweb-pod
             labels:
                 env: production
-            specs:
+            spec:
                 containers:
                 -  name: myweb-con
                 image: vimal13/apache-webserver-php
