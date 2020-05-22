@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+   name: myrs
+spec:
+   replicas: 3
+   selector:
+      matchLabels:
+          env: production
+   template:
+      metadata:
+         name: mypod-rs
+         labels:
+            env: production
+            region: IN
+      spec:
+         containers:
+           - name: mypod-con
+             image: httpd 
