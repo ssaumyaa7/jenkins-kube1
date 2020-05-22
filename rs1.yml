@@ -16,5 +16,5 @@ spec:
                 env: production
             spec:
                 containers:
-                -  name: myweb-con
+                -    name: myweb-con
                 image: vimal13/apache-webserver-php
